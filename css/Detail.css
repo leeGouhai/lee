@@ -1,0 +1,73 @@
+.store-ad-img { position: relative; left: -18px; }
+
+.detail_nav { background: #f3a500; position: relative; left: -18px; height: auto; }
+.detail_nav .main-container { height: 40px; position: relative; }
+.detail_nav .main-container ul li { float: left; }
+.detail_nav .main-container ul li a.last { border-right: 1px solid #ef8f01; }
+.detail_nav .main-container ul li a { width: 120px; display: block; color: #FFF; height: 40px; font-size: 15px; line-height: 40px; text-align: center; border-left: 1px solid #ef8f01; }
+.detail_nav .main-container .homepage a { width: 120px; }
+.detail_nav .main-container .catalog a { width: 200px; }
+
+img.lazy { background: url(../img/lazy.gif) center no-repeat; }
+
+.showcase { position: relative; background-color: #FBFBFB; left: -18px; }
+.showcase .search_head { color: #333; height: 47px; font-size: 14px; padding: 15px 0 12px; border-bottom: solid 1px #e7e7e7; }
+.showcase .search_head ul li { float: left; }
+.showcase .detail-info { background: #fff; margin-bottom: 10px; }
+.showcase .detail-info .product_pick .add_cart .buy_now, .showcase .detail-info .storeinfo .btn-chat { background: #f6ab00; color: #fff; text-align: center; padding: 5px; font-size: 14px; display: inline-block; }
+.showcase .detail-info .product_pick .add_cart .btn-addcart, .showcase .detail-info .storeinfo .btn-intostore { background: #37A0DB; padding: 5px; color: #fff; text-align: center; font-size: 14px; display: inline-block; }
+.showcase .detail-info .detail_top { width: 929px; float: left; min-height: 505px; background-color: #fff; }
+.showcase .detail-info .detail_top .albums-other { float: left; margin-bottom: 10px; }
+.showcase .detail-info .detail_top .albums-other .albums-number { width: 200px; float: left; color: #666; }
+.showcase .detail-info .detail_top .albums-other .albums-number label { margin: 0 5px; font-weight: 700; }
+.showcase .detail-info .detail_top .albums-other .share { float: right; width: 150px; font-size: 13px; line-height: 16px !important; }
+.showcase .detail-info .detail_top .albums-other .share a { padding-left: 19px; height: 16px; text-decoration: none; cursor: pointer; margin-right: 3px; display: inline-block; }
+.showcase .detail-info .detail_top .albums-other .share .bshare-qzone { background: url(../img/Detail/top_logos_sprite.png) no-repeat 0 -234px; }
+.showcase .detail-info .detail_top .albums-other .share .bshare-sinablog { background: url(../img/Detail/top_logos_sprite.png) no-repeat 0 -270px; }
+.showcase .detail-info .detail_top .albums-other .share .bshare-more { background: url(../img/Detail/top_logos_sprite.png) no-repeat; }
+.showcase .detail-info .detail_top .inf { padding-top: 15px; width: 529px; float: right; border-left: 1px solid #f5f5f5; }
+.showcase .detail-info .detail_top .inf .title { line-height: 150%; position: relative; font-size: 18px; padding-left: 10px; }
+.showcase .detail-info .detail_top .inf .title b { color: #37a0db; }
+.showcase .detail-info .detail_top .inf .info-count { padding-left: 10px; background: #F7F7F7; position: relative; min-height: 115px; overflow: hidden; }
+.showcase .detail-info .detail_top .inf .info-count .price-cont { margin: 0; }
+.showcase .detail-info .detail_top .inf .info-count .price-cont .rmb { color: #c00; font-weight: 700; font-size: 16px; font-style: normal; }
+.showcase .detail-info .detail_top .inf .info-count .price-cont .price { color: #c00; font-size: 30px; }
+.showcase .detail-info .detail_top .inf .info-count .price-cont .label { color: #0068B6; margin-left: 4px; }
+.showcase .detail-info .detail_top .inf .info-count .price-cont .info-count-rp { display: block; }
+.showcase .detail-info .detail_top .inf .info-count .code { width: 118px; position: absolute; right: 0; top: 0; text-align: center; }
+.showcase .detail-info .detail_top .inf .info-count .code .code-img { text-align: center; margin: 5px auto 0; width: 90px; height: 90px; padding: 5px; background: #fff; }
+.showcase .detail-info .detail_top .inf .info-count .code .code-img img { width: 80px; height: 80px; margin: 0; padding: 0; display: block; }
+.showcase .detail-info .detail_top .inf .product_pick { margin-top: 5px; margin-left: 20px; }
+.showcase .detail-info .detail_top .inf .product_pick label.caption { float: left; display: block; color: #666; padding: 5px 0; width: 50px; margin-bottom: 5px; font-weight: 700; }
+.showcase .detail-info .detail_top .inf .product_pick dl { overflow: hidden; }
+.showcase .detail-info .detail_top .inf .product_pick dl dt, .showcase .detail-info .detail_top .inf .product_pick dl dd { float: left; }
+.showcase .detail-info .detail_top .inf .product_pick dt.caption { float: left; display: block; color: #666; padding: 5px 0; width: 50px; margin-bottom: 5px; font-weight: 700; }
+.showcase .detail-info .detail_top .inf .product_pick .address_box, .showcase .detail-info .detail_top .inf .product_pick .size_box, .showcase .detail-info .detail_top .inf .product_pick .color_box { margin-bottom: 5px; }
+.showcase .detail-info .detail_top .inf .product_pick .size_box dl dd, .showcase .detail-info .detail_top .inf .product_pick .color_box dl dd { color: #666; margin: 0 5px 5px 0; cursor: pointer; display: inline-block; padding: 5px 14px; border: 1px solid #eee; }
+.showcase .detail-info .detail_top .inf .product_pick .size_box dl dd.select, .showcase .detail-info .detail_top .inf .product_pick .color_box dl dd.select { border: 1px solid #f6ab00; background: url(../img/Detail/selecticon.jpg) right bottom no-repeat; }
+.showcase .detail-info .detail_top .inf .product_pick .address_box { border-bottom: 1px solid #000; }
+.showcase .detail-info .detail_top .inf .product_pick .address_box .address-city { position: relative; z-index: 50; float: left; }
+.showcase .detail-info .detail_top .inf .product_pick .num_box { font-size: 0; height: 28px; line-height: 28px; margin: 5px 0; }
+.showcase .detail-info .detail_top .inf .product_pick .num_box .buy_number_input { height: 28px; float: left; width: 105px; display: inline; background: url(../img/Detail/num.png) no-repeat -5px 0; }
+.showcase .detail-info .detail_top .inf .product_pick .num_box .buy_number_input span { display: inline; float: left; height: 28px; width: 28px; cursor: pointer; }
+.showcase .detail-info .detail_top .inf .product_pick .num_box .buy_number_input input { float: left; display: inline; width: 49px; height: 28px; text-align: center; line-height: 28px; border: 0; overflow: hidden; background: 0 0; margin-top: 1px; font-size: 14px; }
+.showcase .detail-info .detail_top .inf .product_pick .add_cart { padding: 5px 0 20px; }
+.showcase .detail-info .detail_top .inf .product_pick .add_cart .cart { display: inline; position: relative; }
+.showcase .detail-info .detail_top .inf .product_pick .add_focus { border: 1px solid #eee; text-align: center; padding: 5px; font-size: 14px; display: inline-block; }
+.showcase .detail-info .storeinfo { padding-top: 20px; border-left: 1px solid #F5F5F5; min-height: 510px; max-width: 270px; }
+.showcase .detail-info .storeinfo .SItitle { border-bottom: 1px solid #ccc; height: 40px; }
+.showcase .detail-info .storeinfo .SItitle label { color: #333; padding: 0 20px; height: 40px; line-height: 40px; display: block; width: 140px; font-size: 16px; }
+.showcase .detail-info .storeinfo .SIinfo { padding-left: 20px; }
+.showcase .detail-info .storeinfo .SIinfo .SIinfologo { height: 100px; width: 250px; overflow: hidden; text-align: center; padding-right: 20px; }
+.showcase .detail-info .storeinfo .SIinfo .SIinfologo img { margin: 0 auto; display: block; width: 100px; height: 100px; }
+.showcase .detail-info .storeinfo .SIinfo .SIh1 { border-bottom: dashed 1px #efefef; height: 30px; line-height: 30px; }
+.showcase .detail-info .storeinfo .SIinfo .SIh1 a { line-height: 30px; }
+.showcase .detail-info .storeinfo .SIinfo ul.SIrate li { height: 16px; width: 250px; color: #666; margin-top: 15px; padding-bottom: 15px; }
+.showcase .detail-info .storeinfo .SIinfo ul.SIrate li span { font-size: 14px; }
+.showcase .detail-info .storeinfo .SIinfo ul.SIrate li i { color: #f6ab00; }
+.showcase .detail-info .storeinfo .SIinfo ul.SIrate li.buy { height: 45px; text-align: center; padding: 0 25px; }
+.showcase .detail-info .storeinfo .SIinfo ul.SIrate li.buy i { color: #fff; padding: 0 4px; }
+
+.label { display: inline; padding: .2em .6em .3em; font-size: 75%; font-weight: 700; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; }
+
+/*# sourceMappingURL=Detail.css.map */

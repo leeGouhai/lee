@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Register</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Regis.css" />
+		<script src="../lib/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/regis.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--注册、登陆页共头部-->
+		<div class="header">
+			<div class="logo_con wrap clearfix">
+				<a href="#" class="logo"></a>
+				<div class="logo-title"><img src="../img/Register/logo_title.png" /></div>
+			</div>
+		</div>
+		<!--主体内容-->
+		<!--<label> 标签为 input 元素定义标注（标记）。
+在 label 元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。
+<label> 标签的 for 属性应当与相关元素的 id 属性相同。-->
+		<div class="main">
+			<div class="main_title">
+				<span class="welcome">欢迎注册</span>
+				<span class="split">|</span>
+				<span class="tologin">已有账号？现在去<a href="Login.html">登陆</a></span>
+			</div>
+			<div class="reg_box">
+				<div class="reg_con">
+					<form action="" method="post" class="reg_form">
+						<div class="reg-line">
+							<label for="phone">手机号 :&nbsp;</label>
+							<input type="text" id="phone" placeholder="建议常用手机号" />
+							<img class="tip tip_phone" src="../img/Register/right_tag.png" />
+						</div>
+						<div class="reg-line">
+							<label for="code">校验码 :&nbsp;</label>
+							<input type="text" id="code" placeholder="请输入验证码" />
+							<span class="code"></span>
+							<img class="tip tip_code" src="../img/Register/right_tag.png" />
+						</div>
+						<div class="reg-line">
+							<label for="psw">密码 :&nbsp;</label>
+							<!--以字母开头，长度在6~10之间，只能包含字母、数字和下划线-->
+							<input type="text" id="psw" placeholder="输入密码,长度在6~10之间" />
+							<img class="tip tip_psw" src="../img/Register/right_tag.png" />
+						</div>
+						<div class="reg-line">
+							<label for="confirm">确认密码 :&nbsp;</label>
+							<input type="text" id="confirm" placeholder="确认密码" />
+							<img class="tip tip_conf" src="../img/Register/right_tag.png" />
+						</div>
+						<div class="reg-line line-protocol">
+							<p class="warn_word"></p>
+							<p class="protocol">
+								<input type="checkbox" class="checkbox" checked="checked">
+								<span>我已经认真阅读并同意<a href="#">《用户注册协议》</a></span>
+							</p>
+						</div>
+						<div class="reg-line" id="immediately">
+							<input type="button" class="submit_button" value="立即注册">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- 底部 -->
+		<div class="footer clearfix">
+			<div class="hr-20 clearfix"></div>
+			<div class="helper">
+				<div class="nav">
+					<ul>
+						<li style="width:285px;">
+							<dl class="first">
+								<dt>新手指南</dt>
+								<dd>
+									<a href="#">免费注册</a>
+								</dd>
+								<dd>
+									<a href="#">搜索商品</a>
+								</dd>
+								<dd>
+									<a href="#">购买流程</a>
+								</dd>
+								<dd>
+									<a href="#">评论晒单</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:182px;">
+							<dl>
+								<dt>配送方式</dt>
+								<dd>
+									<a href="#">配送方式</a>
+								</dd>
+								<dd>
+									<a href="#">配送时间</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:180px;">
+							<dl>
+								<dt>支付方式</dt>
+								<dd>
+									<a href="#">支付宝支付</a>
+								</dd>
+								<dd>
+									<a href="#">银联卡支付</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:165px;">
+							<dl>
+								<dt>售后服务</dt>
+								<dd>
+									<a href="#">售后政策</a>
+								</dd>
+								<dd>
+									<a href="#">退款说明</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:193px;">
+							<dl>
+								<dt>招商合作</dt>
+								<dd>
+									<a href="#">商家入驻</a>
+								</dd>
+								<dd>
+									<a href="#">企业会员</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:160px;">
+							<dl>
+								<dt>购物指南</dt>
+								<dd>
+									<a href="#">星币说明</a>
+								</dd>
+								<dd>
+									<a href="#">交易条款</a>
+								</dd>
+								<dd>
+									<a href="#">购物流程</a>
+								</dd>
+								<dd>
+									<a href="#">注册流程</a>
+								</dd>
+								<dd>
+									<a href="#">常见问题</a>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="advantage">
+				<div class="main-container clearfix">
+					<a href="#" title="O2O双线开放" class="s1">O2O双线开放</a>
+					<a href="#" title="免年费返佣金" class="s2">免年费 返佣金</a>
+					<a href="#" title="仓储物流服务" class="s3">仓储物流服务</a>
+				</div>
+			</div>
+			<div class="about">
+				<p class="link">
+					<a href="#">关于我们 </a>
+					|
+					<a href="#">联系我们 </a>
+					|
+					<a href="#">品牌介绍</a>
+					|
+					<a href="#">商家入驻 </a>
+					|
+					<a href="#">友情链接 </a>
+					|
+					<a href="#">法律声明 </a>
+					|
+					<a href="#">出版物许可证 </a>
+				</p>
+				<p class="copyright">
+					© 2016-2018
+					<a href="#">如此生活</a>
+					版权所有
+					<a href="#">沪ICP备11038000号-2</a>
+				</p>
+			</div>
+		</div>
+	</body>
+
+</html>

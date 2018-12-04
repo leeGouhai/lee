@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Detail</title>
+		<style type="text/css">
+
+		</style>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Detail.css" />
+		<link rel="stylesheet" type="text/css" href="../css/magnifier.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font_947914_ztq77f6xt1q/iconfont.css"/>
+		<script src="../lib/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/requestAnimationFrame.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/magnifier.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/jquery.fly.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/detail.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部(公共部分)-->
+		<div id="header" class="header">
+			<div class="main-container clearfix">
+				<div class="tips fl logout">
+					<label class="panel">
+						Hi,欢迎来到如此生活
+					</label>
+					<a class="out" href="#">退出</a>
+					<a class="login_link" href="Login.html">登录</a>
+					<em class="separator">|</em>
+					<a class="register_link" href="Regis.html">免费注册</a>
+					<!--<em class="separator">|</em>
+					<a href="#" title="关注如此生活 官方微信"></a>
+					<a href="#" title="关注如此生活 官方微博"></a>-->
+				</div>
+				<div class="nav fr">
+					<div class="dropdown fl">
+						<a href="#"> 我的生活 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">我的订单</a>
+							</li>
+							<li>
+								<a href="#">星币查询</a>
+							</li>
+							<li>
+								<a href="#">余额查询</a>
+							</li>
+							<li>
+								<a href="#">我的优惠券</a>
+							</li>
+						</ul>
+					</div>
+					<em class="separator fl">|</em>
+					<div class="fl">
+						<a href="#"> 商家入驻 </a>
+					</div>
+					<em class="separator fl">|</em>
+					<div class="dropdown fl">
+						<a href="#"> 帮助中心 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">帮助首页</a>
+							</li>
+							<li>
+								<a href="#">售后服务</a>
+							</li>
+						</ul>
+					</div>
+					<em class="separator fl">|</em>
+					<div class="dropdown fl">
+						<a href="#"> 更多导航 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">首页</a>
+							</li>
+							<li>
+								<a href="#">海外精品</a>
+							</li>
+							<li>
+								<a href="#">星范儿</a>
+							</li>
+							<li>
+								<a href="#">星特惠</a>
+							</li>
+							<li>
+								<a href="#">星粉专区</a>
+							</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<!--搜索(公共部分)-->
+		<div class="search_bar clearfix">
+			<div class="main-container">
+				<div class="logo fl">
+					<a href="#" class="picture">如此生活</a>
+				</div>
+				<div class="control fl">
+					<div class="lj_search">
+						<span class="stored">商品</span>
+						<span class="shoper">店铺</span>
+					</div>
+					<div class="box">
+						<div class="form-panel">
+							<input type="text" id="" value="" placeholder="搜索商品" />
+							<button class="button_goods">搜索</button>
+						</div>
+						<div class="form-tags">
+							<ul>
+								<li>
+									<a href="#">山茶油</a>
+								</li>
+								<li>
+									<a href="#">iphone X</a>
+								</li>
+								<li>
+									<a href="#">COACH</a>
+								</li>
+								<li>
+									<a href="#">韩都衣舍</a>
+								</li>
+								<li>
+									<a href="#">ARTIART不倒杯</a>
+								</li>
+								<li>
+									<a href="#">清风</a>
+								</li>
+								<li>
+									<a href="#">三只蚂蚁</a>
+								</li>
+								<li>
+									<a href="#">卡罗特</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="hotline fr">
+					<a class="picture" href="#">客服热线 400-068-5151</a>
+				</div>
+			</div>
+		</div>
+		<!--店铺名称-->
+		<div class="store-ad-img">
+			<div class="main-container">
+				<img src="../img/Detail/storeLogo/hongren.jpg" />
+			</div>
+		</div>
+		<div class="detail_nav">
+			<div class="main-container">
+				<ul class="fl">
+					<li class="homepage">
+						<a href="../main.html">首页</a>
+					</li>
+					<li class="catalog">
+						<a href="#">店铺全部分类</a>
+					</li>
+					<li class="lists">
+						<a href="#">所有宝贝</a>
+					</li>
+					<li class="service">
+						<a href="#" class="last">售后服务</a>
+					</li>
+				</ul>
+				<ul class="fr">
+					<li class="coupon">
+						<a href="#">店铺优惠券</a><i class="icon"></i>
+					</li>
+					<li class="focus">
+						<i class="icon"></i>
+						<a href="#" class="last">关注店铺</a><i class="icon"></i>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--主体-->
+		<div class="showcase clearfix">
+			<!--头-->
+			<div class="search_head main-container">
+				<ul class="clearfix">
+					<li>
+						<i class="icon iconfont icon-home"></i>
+						<a href="#">如此生活</a>
+						<i class="icon iconfont icon-chevronright"></i>
+					</li>
+					<!--<li>
+						<a href="#">红人衣橱></a>
+						<i class="icon"></i>
+					</li>
+					<li>
+						<a href="">elleozhang 无缝半身长裙</a>
+					</li>-->
+				</ul>
+			</div>
+
+			<div class="search_main main-container detail-info">
+				<!--产品-->
+				<div class="detail_top">
+					<div class="product_info clearfix">
+						<!--产品图片-->
+						<div class="wraper clearfix" style="width: 400px; float: left;">
+							<div class="magnifier" id="magnifier1">
+								<div class="magnifier-container">
+									<div class="images-cover"></div>
+									<!--当前图片显示容器-->
+									<div class="move-view"></div>
+									<!--跟随鼠标移动的盒子-->
+								</div>
+								<div class="magnifier-assembly">
+									<div class="magnifier-btn">
+										<span class="magnifier-btn-left">&lt;</span>
+										<span class="magnifier-btn-right">&gt;</span>
+									</div>
+									<!--按钮组-->
+									<div class="magnifier-line">
+										<ul class="clearfix animation03">
+											<!--<li>
+												<div class="small-img">
+													<img src="../img/Detail/produce/elleozhang无缝半身长裙-1.1.jpg" />
+												</div>
+											</li>
+											<li>
+												<div class="small-img">
+													<img src="../img/Detail/produce/elleozhang无缝半身长裙-1.2.jpg" />
+												</div>
+											</li>
+											<li>
+												<div class="small-img">
+													<img src="../img/Detail/produce/1.png" />
+												</div>
+											</li>
+											<li>
+												<div class="small-img">
+													<img src="../img/Detail/produce/elleozhang无缝半身长裙-1.2.jpg" />
+												</div>
+											</li>
+											<li>
+												<div class="small-img">
+													<img src="../img/Detail/produce/elleozhang无缝半身长裙-1.2.jpg" />
+												</div>
+											</li>-->
+										</ul>
+									</div>
+									<!--缩略图-->
+								</div>
+								<div class="magnifier-view"></div>
+								<!--经过放大的图片显示容器-->
+							</div>
+							<div class="albums-other clearfix">
+								<div class="albums-number">
+									<label>商品编号</label>74587
+								</div>
+								<div class="share">
+									<a title="分享到QQ空间" class="bshare-qzone"></a>
+									<a title="分享到新浪微博" class="bshare-sinablog"></a>
+									<a title="更多平台" class="bshare-more"></a>
+								</div>
+							</div>
+						</div>
+
+						<!--产品基本信息-->
+						<div class="inf">
+							<h1 class="title">
+								<!--<b>elleozhang 无缝半身长裙</b>-->
+							</h1>
+							<br />
+							<div class="info-count">
+								<p class="price-cont">
+									<em class="rmb">¥</em>
+									<span class="price"><!--209.00--></span>
+									<span class="label">如此生活价</span>
+									<span class="info-count-rp">
+									(参考价<del>
+										¥<span id="info_market_price"><!--899.00--></span>
+									</del>)
+									</span>
+								</p>
+								<div class="code">
+									<div class="code-img">
+										<img src="../img/Detail/code.jpg" />
+									</div>
+									<p class="actnotic-code-tit">移动端扫购更便捷</p>
+								</div>
+							</div>
+							<div class="product_pick">
+								<!--<div class="service_box">
+									<label>评价</label>
+								</div>-->
+								<!--三级联动-->
+								<div class="address_box clearfix">
+									<label class="caption">送至</label>
+									<div class="address-city">
+
+									</div>
+								</div>
+								<div class="color_box clearfix">
+									<dl>
+										<dt class="caption">颜色</dt>
+										<!--<dd type="color" class="select">宝蓝</dd>
+										<dd type="color">卡其</dd>
+										<dd type="color">军绿</dd>-->
+									</dl>
+								</div>
+								<div class="size_box clearfix">
+									<dl>
+										<dt class="caption">尺码</dt>
+										<!--<dd type="size" class="select">L</dd>
+										<dd type="size">M</dd>-->
+									</dl>
+								</div>
+								<div class="num_box">
+									<label class="caption">数量</label>
+									<div class="buy_number_input">
+										<span class="decrease_num" title="减少"></span>
+										<input class="buy_number" value="1">
+										<span class="increase_num" title="增加"></span>
+									</div>
+								</div>
+								<div class="add_cart">
+									<a href="javascript:void(0)" class="buy_now">立即购买</a>
+									<div class="cart">
+										<a href="javascript:void(0)" id="btn-addcart" class="btn-addcart" title="加入购物车"><i class="icon iconfont icon-shoppingcart"></i>加入购物车</a>
+									</div>
+									<span class="add_focus"><i class="icon iconfont icon-starempty"></i>关注</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--店铺-->
+				<div class="storeinfo clearfix fr">
+					<div class="SItitle">
+						<label>店铺信息</label>
+					</div>
+					<div class="SIinfo">
+						<div class="SIinfo">
+							<div class="tcenter SIinfologo">
+								<img src="../img/Detail/storeLogo/Logo_hr.jpg" alt="红人衣橱">
+							</div>
+							<div class="SIh1 clearfix">
+								<span class="fl SIh1">卖家：</span>
+								<span><a title="红人衣橱" href="#">红人衣橱</a></span>
+							</div>
+							<ul class="SIrate">
+								<li>
+									<span>商品包装：</span>
+									<span>
+										<i class="icon"></i> 
+										<i class="icon"></i> 
+										<i class="icon"></i> 
+										<i class="icon"></i> 
+										<i class="icon"></i> 									</span>
+								</li>
+								<li>
+									<span>送货速度：</span>
+									<span>
+										<i class="icon"></i> 
+										<i class="icon"></i> 
+										<i class="icon"></i> 
+										<i class="icon"></i> 
+										<i class="icon"></i> 									</span>
+								</li>
+								<li>
+									<span>配送服务：</span>
+									<span>
+										<i class="icon"></i> 
+										<i class="icon"></i> 
+										<i class="icon"></i> 
+										<i class="icon"></i> 
+										<i class="icon"></i> 									</span>
+								</li>
+								<li class="buy">
+									<a class="btn-intostore fl" href="#">
+										<i class="icon"></i>进入店铺
+									</a>
+									<a class="btn-chat">
+										<i class="icon"></i> 在线客服
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!--底部-->
+		<div class="footer clearfix">
+			<div class="hr-20 clearfix"></div>
+			<div class="helper">
+				<div class="nav">
+					<ul>
+						<li style="width:285px;">
+							<dl class="first">
+								<dt>新手指南</dt>
+								<dd>
+									<a href="#">免费注册</a>
+								</dd>
+								<dd>
+									<a href="#">搜索商品</a>
+								</dd>
+								<dd>
+									<a href="#">购买流程</a>
+								</dd>
+								<dd>
+									<a href="#">评论晒单</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:182px;">
+							<dl>
+								<dt>配送方式</dt>
+								<dd>
+									<a href="#">配送方式</a>
+								</dd>
+								<dd>
+									<a href="#">配送时间</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:180px;">
+							<dl>
+								<dt>支付方式</dt>
+								<dd>
+									<a href="#">支付宝支付</a>
+								</dd>
+								<dd>
+									<a href="#">银联卡支付</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:165px;">
+							<dl>
+								<dt>售后服务</dt>
+								<dd>
+									<a href="#">售后政策</a>
+								</dd>
+								<dd>
+									<a href="#">退款说明</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:193px;">
+							<dl>
+								<dt>招商合作</dt>
+								<dd>
+									<a href="#">商家入驻</a>
+								</dd>
+								<dd>
+									<a href="#">企业会员</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:160px;">
+							<dl>
+								<dt>购物指南</dt>
+								<dd>
+									<a href="#">星币说明</a>
+								</dd>
+								<dd>
+									<a href="#">交易条款</a>
+								</dd>
+								<dd>
+									<a href="#">购物流程</a>
+								</dd>
+								<dd>
+									<a href="#">注册流程</a>
+								</dd>
+								<dd>
+									<a href="#">常见问题</a>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="advantage">
+				<div class="main-container clearfix">
+					<a href="#" title="O2O双线开放" class="s1">O2O双线开放</a>
+					<a href="#" title="免年费返佣金" class="s2">免年费 返佣金</a>
+					<a href="#" title="仓储物流服务" class="s3">仓储物流服务</a>
+				</div>
+			</div>
+			<div class="about">
+				<p class="link">
+					<a href="#">关于我们 </a>
+					|
+					<a href="#">联系我们 </a>
+					|
+					<a href="#">品牌介绍</a>
+					|
+					<a href="#">商家入驻 </a>
+					|
+					<a href="#">友情链接 </a>
+					|
+					<a href="#">法律声明 </a>
+					|
+					<a href="#">出版物许可证 </a>
+				</p>
+				<p class="copyright">
+					© 2016-2018
+					<a href="#">如此生活</a>
+					版权所有
+					<a href="#">沪ICP备11038000号-2</a>
+				</p>
+			</div>
+		</div>
+
+		<!--侧边栏-->
+		<div class="sidebar">
+			<div class="rtbar">
+				<div class="rtbar-tab rtbar-avatar">
+					<div class="rtbar-icon">
+						<img src="../img/index/avatar-female-32x32.png" class="avatar-female">
+					</div>
+					<div class="rtbar-mbrcenter logout">
+						<!--未登录状态-->
+						<div class="mui-mbarp-prof-bd" style="margin: 30px;">
+							<div class="mui-mbarp-prof-icon-bd" style="display: inline-block;">
+								<img class="mui-mbarp-prof-icon" src="../img/index/avatar-male.png" style="width: 58px;height: 58px; border-radius: 50%;display:inline-block; " />
+							</div>
+							<div class="mui-mbarp-prof-lv-bd" style="display: inline-block !important;">
+								<div class="mui-mbarp-prof-lv-tl ">
+									<span class="nofonts" style="color: #000 !important;">Hi,</span>
+									<a href="html/Login.html" class="nologin">请登录</a>
+								</div>
+							</div>
+						</div>
+						<!--登陆状态-->
+						<div class="rtbar-mbrcenter-info">
+							<div class="rtbar-mbrcenter-info-hd fl">
+								<img src="../img/index/avatar-male.png" />
+								<div class="rtbar-mbrcenter-info-hd-edit">
+									<a href="#">编辑</a>
+								</div>
+							</div>
+							<div class="rtbar-mbrcenter-info-bd fl">
+								<p class="name"><small>个人</small></p>
+								<p> 星币数量 <span class="red"> 0</span></p>
+								<p> 钱包余额 <span class="price">¥ 0.00</span></p>
+							</div>
+						</div>
+
+						<div class="rtbar-arrow" style="opacity: 1;">◆</div>
+					</div>
+				</div>
+				<div class="rtbar-tab rtbar-mycart">
+					<div class="rtbar-icon" id="mycart">
+						<a href="#">
+							<i class="icon iconfont icon-gouwuche"></i>
+						</a>
+					</div>
+					<a href="#" style="opacity: 1; right: 35px;">
+						<div class="rtbar-hint">
+							<div class="rtbar-tips">我的购物</div>
+							<div class="rtbar-arrow">◆</div>
+						</div>
+						<div class="rtbar-title">购物车</div>
+						<div id="amount" class="rtbar-amount">0</div>
+					</a>
+				</div>
+				<div class="rtbar-tab rtbar-asset">
+					<div class="rtbar-icon">
+						<a href="#"><i class="icon iconfont icon-money"></i></a>
+					</div>
+					<div class="rtbar-hint">
+						<div class="rtbar-tips">我的资产</div>
+						<div class="rtbar-arrow">◆</div>
+					</div>
+				</div>
+				<div class="rtbar-tab rtbar-focus-goods">
+					<div class="rtbar-icon">
+						<a href="#"><i class="icon iconfont icon-heart"></i></a>
+					</div>
+					<div class="rtbar-hint">
+						<div class="rtbar-tips">关注的商品</div>
+						<div class="rtbar-arrow">◆</div>
+					</div>
+				</div>
+				<div class="rtbar-tab rtbar-focus-shop">
+					<div class="rtbar-icon">
+						<a href="#"><i class="icon iconfont icon-starempty"></i></a>
+					</div>
+					<div class="rtbar-hint">
+						<div class="rtbar-tips">关注的店铺</div>
+						<div class="rtbar-arrow">◆</div>
+					</div>
+				</div>
+				<div class="rtbar-tab rtbar-history">
+					<div class="rtbar-icon">
+						<a href="#"><i class="icon iconfont icon-eye"></i></a>
+					</div>
+					<div class="rtbar-hint">
+						<div class="rtbar-tips">历史记录</div>
+						<div class="rtbar-arrow">◆</div>
+					</div>
+				</div>
+				<div class="rtbar-tab rtbar-suggestion">
+					<div class="rtbar-icon">
+						<a href="#"><i class="icon iconfont icon-user"></i></a>
+					</div>
+					<div class="rtbar-hint">
+						<div class="rtbar-tips">客服</div>
+						<div class="rtbar-arrow">◆</div>
+					</div>
+				</div>
+				<div class="rtbar-tab rtbar-rocket">
+					<div class="rtbar-icon">
+						<a href="#header" style="color: #fff;"><i class="icon iconfont icon-eject"></i></a>
+					</div>
+					<div class="rtbar-hint">
+						<div class="rtbar-tips">返回顶部</div>
+						<div class="rtbar-arrow">◆</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

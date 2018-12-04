@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Cart</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Cart.css" />
+		<script src="../lib/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/cart.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部(公共部分)-->
+		<div id="header" class="header">
+			<div class="main-container clearfix">
+				<div class="tips fl logout">
+					<label class="panel">
+						Hi,欢迎来到如此生活
+					</label>
+					<a class="out" href="#">退出</a>
+					<a class="login_link" href="Login.html">登录</a>
+					<em class="separator">|</em>
+					<a class="register_link" href="Regis.html">免费注册</a>
+					<!--<em class="separator">|</em>
+					<a href="#" title="关注如此生活 官方微信"></a>
+					<a href="#" title="关注如此生活 官方微博"></a>-->
+				</div>
+				<div class="nav fr">
+					<div class="dropdown fl">
+						<a href="#"> 我的生活 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">我的订单</a>
+							</li>
+							<li>
+								<a href="#">星币查询</a>
+							</li>
+							<li>
+								<a href="#">余额查询</a>
+							</li>
+							<li>
+								<a href="#">我的优惠券</a>
+							</li>
+						</ul>
+					</div>
+					<em class="separator fl">|</em>
+					<div class="fl">
+						<a href="#"> 商家入驻 </a>
+					</div>
+					<em class="separator fl">|</em>
+					<div class="dropdown fl">
+						<a href="#"> 帮助中心 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">帮助首页</a>
+							</li>
+							<li>
+								<a href="#">售后服务</a>
+							</li>
+						</ul>
+					</div>
+					<em class="separator fl">|</em>
+					<div class="dropdown fl">
+						<a href="#"> 更多导航 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">首页</a>
+							</li>
+							<li>
+								<a href="#">海外精品</a>
+							</li>
+							<li>
+								<a href="#">星范儿</a>
+							</li>
+							<li>
+								<a href="#">星特惠</a>
+							</li>
+							<li>
+								<a href="#">星粉专区</a>
+							</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="nav">
+			<div class="main-container">
+				<div class="fl nav_l">
+					<a href="javascript:void(0)" class="logo"></a>
+				</div>
+				<div class="fr nav_r">
+					<div class="flowstep">
+						<ol>
+							<li class="step-first">
+								<div class="step-done">
+									<div class="step-name">
+										<a href="javascript:void(0)">我的购物车</a>
+									</div>
+									<div class="step-no"></div>
+								</div>
+							</li>
+							<li>
+								<div class="step-name">
+									<a href="javascript:void(0)">确认订单信息</a>
+								</div>
+								<div class="step-no ">
+									2 </div>
+							</li>
+							<li>
+								<div class="step-name">
+									<a href="javascript:void(0)">付款</a>
+								</div>
+								<div class="step-no ">
+									3 </div>
+							</li>
+							<li>
+								<div class="step-name">
+									<a href="javascript:void(0)">确认收货</a>
+								</div>
+								<div class="step-no ">
+									4 </div>
+							</li>
+							<li class="step-last">
+								<div class="step-name">
+									<a href="javascript:void(0)">评价</a>
+								</div>
+								<div class="step-no">
+									5
+								</div>
+							</li>
+
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cartmain">
+			<div class="top-tips">
+				<!--全部商品（3）-->
+			</div>
+			<div class="top-menu">
+				<table border="0">
+					<tbody>
+						<tr>
+							<td width="36">
+								<span>
+                                    <input type="checkbox" class="whole_check sum-class">
+                                </span>
+							</td>
+							<td width="96">全选</td>
+							<td width="374">商品信息</td>
+							<td width="139" align="right">如此生活（价）</td>
+							<td width="135" align="right">星币</td>
+							<td width="139">数量</td>
+							<td width="139" align="right">小计（元）</td>
+							<td width="138">操作</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="platform">
+				<div class="platform-top">
+					<div class="top1">
+						<div class="topdiv2 topdiv2">平台全场活动</div>
+					</div>
+					<div class="top2">
+						<span>活动</span>
+						<span>
+                            &nbsp;&nbsp;请选择平台活动&nbsp;&nbsp;                               
+                        </span>
+					</div>
+				</div>
+			</div>
+
+			<!--店铺1盒子-->
+			<!--<div class="cart-item-list cartBox">
+				<div class="shop-name clearfix">
+					<div class="name-left">
+						<div>
+							<span>
+								<input type="checkbox" value="" class="shopChoice">
+							</span>
+							<span>韩都衣舍旗舰店</span>
+						</div>
+					</div>
+				</div>
+				<div class="blue-line"></div>
+
+				<div class="full-gift">
+					<div class="full-gift-item">
+						<table border="0">
+							<tbody>
+								<tr>
+									<td width="40%" align="left">
+										<a href="#" class="onlylist-parent td_1">
+											<img src="../img/Cart/love.jpg" />
+										</a>
+										<a href="#" class="td_2">
+											韩都衣舍2018新款女装春装韩版显瘦短裙a字裙半身裙
+										</a>
+										<div class="td_3">
+											<div class="td_text">藏蓝色,L</div>
+										</div>
+									</td>
+									<td width="15%" align="right">
+										<span class="price">￥136</span>
+									</td>
+									<td width="10%" align="right">
+
+									</td>
+									<td width="12%">
+										<div class="quantity-form">
+											<input type="button" class="decrement fl" datainfo="" value="-">
+											<input type="text" class="itxt" datainfo="" value="1">
+											<input type="button" class="increment fr" datainfo="" value="+">
+										</div>
+									</td>
+									<td width="12%" align="right" class="color-red">
+										<div class="price1">
+											<span class="color-red cost">￥136</span>
+										</div>
+									</td>
+									<td width="12%">
+										<span><i datainfo="" class="cancel icon">cancel</i></span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="item-checkbox">
+							<span><input type="checkbox" class="son_check cart_item_selector"/></span>
+						</div>
+						<div class="item-line-small"></div>
+
+					</div>
+
+				</div>
+
+				<div class="item-table-line"></div>
+			</div>-->
+			<!--店铺2盒子-->
+			<!--<div class="cart-item-list cartBox">
+				<div class="shop-name clearfix">
+					<div class="name-left">
+						<div>
+							<span>
+								<input type="checkbox" value="" class="shopChoice">
+							</span>
+							<span>韩都衣舍旗舰店</span>
+						</div>
+					</div>
+				</div>
+				<div class="blue-line"></div>
+
+				<div class="full-gift">
+					<div class="full-gift-item">
+						<table border="0">
+							<tbody>
+								<tr>
+									<td width="40%" align="left">
+										<a href="#" class="onlylist-parent td_1">
+											<img src="../img/Cart/love.jpg" />
+										</a>
+										<a href="#" class="td_2">
+											韩都衣舍2018新款女装春装韩版显瘦短裙a字裙半身裙
+										</a>
+										<div class="td_3">
+											<div class="td_text">藏蓝色,L</div>
+										</div>
+									</td>
+									<td width="15%" align="right">
+										<span class="price">￥136</span>
+									</td>
+									<td width="10%" align="right">
+
+									</td>
+									<td width="12%">
+										<div class="quantity-form">
+											<input type="button" class="decrement fl" datainfo="" value="-">
+											<input type="text" class="itxt" datainfo="" value="1">
+											<input type="button" class="increment fr" datainfo="" value="+">
+										</div>
+									</td>
+									<td width="12%" align="right" class="color-red">
+										<div class="price1">
+											<span class="color-red cost">￥136</span>
+										</div>
+									</td>
+									<td width="12%">
+										<span><i datainfo="" class="icon cancel">cancel</i></span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="item-checkbox">
+							<span><input type="checkbox" class="son_check cart_item_selector"/></span>
+						</div>
+						<div class="item-line-small"></div>
+
+					</div>
+
+				</div>
+
+				<div class="item-table-line"></div>
+			</div>-->
+
+			<div class="cart-bottom-select">
+				<div class="select-left">
+					<div>
+						<input type="checkbox" class="sum-class whole_check">
+					</div>
+					<div>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全选&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a class="color-orange" href="javascript:void(0)">继续购物</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</div>
+				</div>
+				<div class="select-right">
+					<div class="right-right" id="account">
+						<span>
+							<a class="btn-chkaccount" href="javascript:void(0)">	
+                            <i class="icon"></i>&nbsp;去结算					
+                            </a>
+						</span>
+					</div>
+					<div class="right-left">
+						<p>已选择
+							<span class="color-orange piece_num">&nbsp;0&nbsp;</span>件商品
+							<span>&nbsp;&nbsp;</span> 总价（不含运费）：
+							<span class="color-orange cost total_text">￥0</span></p>
+						<p>已减：-￥0</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="recommend-bottom">
+			<div class="recommend-head">
+				<div class="hot-sale recommend-select">猜你喜欢</div>
+				<div class="record">最近浏览</div>
+			</div>
+			<div class="hot-sale recommend-select">
+				<div class="switch-content">
+					<div class="recommend-content swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="recommend-item">
+									<a href="#">
+										<img src="" width="160" height="160" />
+									</a>
+								</div>
+								<div class="recommend-name">
+									<a href="#">
+										1
+									</a>
+								</div>
+								<div class="recommend-price">
+									<span>￥399.00 </span>
+								</div>
+								<div class="recommend-btn">
+									<a href="#">
+										<span><i class="icon"></i></span>
+										<span>&nbsp;&nbsp;加入购物车</span>
+									</a>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="recommend-item">
+									<a href="#">
+										<img src="" width="160" height="160" />
+									</a>
+								</div>
+								<div class="recommend-name">
+									<a href="#">
+										2
+									</a>
+								</div>
+								<div class="recommend-price">
+									<span>￥399.00 </span>
+								</div>
+								<div class="recommend-btn">
+									<a href="#">
+										<span><i class="icon"></i></span>
+										<span>&nbsp;&nbsp;加入购物车</span>
+									</a>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="recommend-item">
+									<a href="#">
+										<img src="" width="160" height="160" />
+									</a>
+								</div>
+								<div class="recommend-name">
+									<a href="#">
+										3
+									</a>
+								</div>
+								<div class="recommend-price">
+									<span>￥399.00 </span>
+								</div>
+								<div class="recommend-btn">
+									<a href="#">
+										<span><i class="icon"></i></span>
+										<span>&nbsp;&nbsp;加入购物车</span>
+									</a>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="recommend-item">
+									<a href="#">
+										<img src="" width="160" height="160" />
+									</a>
+								</div>
+								<div class="recommend-name">
+									<a href="#">
+										4
+									</a>
+								</div>
+								<div class="recommend-price">
+									<span>￥399.00 </span>
+								</div>
+								<div class="recommend-btn">
+									<a href="#">
+										<span><i class="icon"></i></span>
+										<span>&nbsp;&nbsp;加入购物车</span>
+									</a>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="recommend-item">
+									<a href="#">
+										<img src="" width="160" height="160" />
+									</a>
+								</div>
+								<div class="recommend-name">
+									<a href="#">
+										5
+									</a>
+								</div>
+								<div class="recommend-price">
+									<span>￥399.00 </span>
+								</div>
+								<div class="recommend-btn">
+									<a href="#">
+										<span><i class="icon"></i></span>
+										<span>&nbsp;&nbsp;加入购物车</span>
+									</a>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="recommend-item">
+									<a href="#">
+										<img src="" width="160" height="160" />
+									</a>
+								</div>
+								<div class="recommend-name">
+									<a href="#">
+										6
+									</a>
+								</div>
+								<div class="recommend-price">
+									<span>￥399.00 </span>
+								</div>
+								<div class="recommend-btn">
+									<a href="#">
+										<span><i class="icon"></i></span>
+										<span>&nbsp;&nbsp;加入购物车</span>
+									</a>
+								</div>
+							</li>
+						</ul>
+						<!--按钮-->
+						<div id="swiper-button-prev">&lt;</div>
+						<div id="swiper-button-next">&gt;</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="footer clearfix">
+			<div class="hr-20 clearfix"></div>
+			<div class="helper">
+				<div class="nav">
+					<ul>
+						<li style="width:285px;">
+							<dl class="first">
+								<dt>新手指南</dt>
+								<dd>
+									<a href="#">免费注册</a>
+								</dd>
+								<dd>
+									<a href="#">搜索商品</a>
+								</dd>
+								<dd>
+									<a href="#">购买流程</a>
+								</dd>
+								<dd>
+									<a href="#">评论晒单</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:182px;">
+							<dl>
+								<dt>配送方式</dt>
+								<dd>
+									<a href="#">配送方式</a>
+								</dd>
+								<dd>
+									<a href="#">配送时间</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:180px;">
+							<dl>
+								<dt>支付方式</dt>
+								<dd>
+									<a href="#">支付宝支付</a>
+								</dd>
+								<dd>
+									<a href="#">银联卡支付</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:165px;">
+							<dl>
+								<dt>售后服务</dt>
+								<dd>
+									<a href="#">售后政策</a>
+								</dd>
+								<dd>
+									<a href="#">退款说明</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:193px;">
+							<dl>
+								<dt>招商合作</dt>
+								<dd>
+									<a href="#">商家入驻</a>
+								</dd>
+								<dd>
+									<a href="#">企业会员</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:160px;">
+							<dl>
+								<dt>购物指南</dt>
+								<dd>
+									<a href="#">星币说明</a>
+								</dd>
+								<dd>
+									<a href="#">交易条款</a>
+								</dd>
+								<dd>
+									<a href="#">购物流程</a>
+								</dd>
+								<dd>
+									<a href="#">注册流程</a>
+								</dd>
+								<dd>
+									<a href="#">常见问题</a>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="advantage">
+				<div class="main-container clearfix">
+					<a href="#" title="O2O双线开放" class="s1">O2O双线开放</a>
+					<a href="#" title="免年费返佣金" class="s2">免年费 返佣金</a>
+					<a href="#" title="仓储物流服务" class="s3">仓储物流服务</a>
+				</div>
+			</div>
+			<div class="about">
+				<p class="link">
+					<a href="#">关于我们 </a>
+					|
+					<a href="#">联系我们 </a>
+					|
+					<a href="#">品牌介绍</a>
+					|
+					<a href="#">商家入驻 </a>
+					|
+					<a href="#">友情链接 </a>
+					|
+					<a href="#">法律声明 </a>
+					|
+					<a href="#">出版物许可证 </a>
+				</p>
+				<p class="copyright">
+					© 2016-2018
+					<a href="#">如此生活</a>
+					版权所有
+					<a href="#">沪ICP备11038000号-2</a>
+				</p>
+			</div>
+		</div>
+
+		<section class="model_bg"></section>
+		<section class="my_model">
+			<p class="title">删除宝贝<span class="closeModel">X</span></p>
+			<p>您确认要删除该宝贝吗？</p>
+			<div class="opBtn">
+				<a href="javascript:;" class="dialog-sure">确定</a>
+				<a href="javascript:;" class="dialog-close">关闭</a>
+			</div>
+		</section>
+	</body>
+
+</html>

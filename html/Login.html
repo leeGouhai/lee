@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Login.css" />
+		<script src="../lib/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--注册、登陆页共头部-->
+		<div class="header">
+			<div class="logo_con wrap clearfix">
+				<a href="#" class="logo"></a>
+				<div class="logo-title"><img src="../img/Login/enter.png" /></div>
+			</div>
+		</div>
+
+		<!-- 登录的主体部分 -->
+		<div class="main">
+			<div class="main-container">
+				<div class="login_cont">
+					<ul>
+						<li class="btn_normal">普通登录</li>
+						<li class="btn_move"><img src="../img/Login/erweima.png" /></li>
+					</ul>
+					<div class="normal_main">
+						<form action="" method="post">
+							<!-- 用户名 -->
+							<input type="text" placeholder="手机/邮箱/用户名" class="ipt ipt_text">
+							<img src="../img/Login/user_blur.png" class="ipt_text_img" />
+							<!-- 密码 -->
+							<input type="password" placeholder="密码" class="ipt ipt_password">
+							<img src="../img/Login/psw_blur.png" alt="" class="ipt_password_img">
+						</form>
+						<p id="msg"></p>
+						<p class="ipt_checkbox">
+							<input type="checkbox" id="remember" checked="checked">记住用户名
+							<a href="#">忘记密码</a>
+						</p>
+						<input type="button" value="登&nbsp;录" class="ipt_btn normal_submit">
+						<span class="bottom_word">
+						没有账号？30S快速&nbsp;
+						<a href="Regis.html" class="toreg">注册</a>
+					    </span>
+						<div class="partner">
+							<span>使用合作网站账号登录:</span>
+							<ul>
+								<li>
+									<a href="#"><img src="../img/Login/qq_logo.png" />QQ</a>
+								</li>
+								<li>
+									<a href="#"><img src="../img/Login/weixin_logo.png" />微信</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 底部 -->
+		<div class="footer clearfix">
+			<div class="hr-20 clearfix"></div>
+			<div class="helper">
+				<div class="nav">
+					<ul>
+						<li style="width:285px;">
+							<dl class="first">
+								<dt>新手指南</dt>
+								<dd>
+									<a href="#">免费注册</a>
+								</dd>
+								<dd>
+									<a href="#">搜索商品</a>
+								</dd>
+								<dd>
+									<a href="#">购买流程</a>
+								</dd>
+								<dd>
+									<a href="#">评论晒单</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:182px;">
+							<dl>
+								<dt>配送方式</dt>
+								<dd>
+									<a href="#">配送方式</a>
+								</dd>
+								<dd>
+									<a href="#">配送时间</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:180px;">
+							<dl>
+								<dt>支付方式</dt>
+								<dd>
+									<a href="#">支付宝支付</a>
+								</dd>
+								<dd>
+									<a href="#">银联卡支付</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:165px;">
+							<dl>
+								<dt>售后服务</dt>
+								<dd>
+									<a href="#">售后政策</a>
+								</dd>
+								<dd>
+									<a href="#">退款说明</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:193px;">
+							<dl>
+								<dt>招商合作</dt>
+								<dd>
+									<a href="#">商家入驻</a>
+								</dd>
+								<dd>
+									<a href="#">企业会员</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="width:160px;">
+							<dl>
+								<dt>购物指南</dt>
+								<dd>
+									<a href="#">星币说明</a>
+								</dd>
+								<dd>
+									<a href="#">交易条款</a>
+								</dd>
+								<dd>
+									<a href="#">购物流程</a>
+								</dd>
+								<dd>
+									<a href="#">注册流程</a>
+								</dd>
+								<dd>
+									<a href="#">常见问题</a>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="advantage">
+				<div class="main-container clearfix">
+					<a href="#" title="O2O双线开放" class="s1">O2O双线开放</a>
+					<a href="#" title="免年费返佣金" class="s2">免年费 返佣金</a>
+					<a href="#" title="仓储物流服务" class="s3">仓储物流服务</a>
+				</div>
+			</div>
+			<div class="about">
+				<p class="link">
+					<a href="#">关于我们 </a>
+					|
+					<a href="#">联系我们 </a>
+					|
+					<a href="#">品牌介绍</a>
+					|
+					<a href="#">商家入驻 </a>
+					|
+					<a href="#">友情链接 </a>
+					|
+					<a href="#">法律声明 </a>
+					|
+					<a href="#">出版物许可证 </a>
+				</p>
+				<p class="copyright">
+					© 2016-2018
+					<a href="#">如此生活</a>
+					版权所有
+					<a href="#">沪ICP备11038000号-2</a>
+				</p>
+			</div>
+		</div>
+	</body>
+
+</html>

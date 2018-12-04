@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main markdown">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont icon-eye"></i>
+                    <div class="name">eye</div>
+                    <div class="fontclass">.icon-eye</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-user"></i>
+                    <div class="name">user</div>
+                    <div class="fontclass">.icon-user</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-arrowdown"></i>
+                    <div class="name">arrow-down</div>
+                    <div class="fontclass">.icon-arrowdown</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-trashbin"></i>
+                    <div class="name">TRASH BIN</div>
+                    <div class="fontclass">.icon-trashbin</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-starempty"></i>
+                    <div class="name">star-empty</div>
+                    <div class="fontclass">.icon-starempty</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-chevronright"></i>
+                    <div class="name">chevron-right</div>
+                    <div class="fontclass">.icon-chevronright</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-arrowup"></i>
+                    <div class="name">arrow-up</div>
+                    <div class="fontclass">.icon-arrowup</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-money"></i>
+                    <div class="name">money</div>
+                    <div class="fontclass">.icon-money</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-shoppingcart"></i>
+                    <div class="name">shopping-cart</div>
+                    <div class="fontclass">.icon-shoppingcart</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-heart"></i>
+                    <div class="name">heart</div>
+                    <div class="fontclass">.icon-heart</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-gouwuche"></i>
+                    <div class="name">购物车</div>
+                    <div class="fontclass">.icon-gouwuche</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-angle-right"></i>
+                    <div class="name">angle-right</div>
+                    <div class="fontclass">.icon-angle-right</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-home"></i>
+                    <div class="name">home</div>
+                    <div class="fontclass">.icon-home</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-eject"></i>
+                    <div class="name">eject</div>
+                    <div class="fontclass">.icon-eject</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-angle-down"></i>
+                    <div class="name">angle-down</div>
+                    <div class="fontclass">.icon-angle-down</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-angle-up"></i>
+                    <div class="name">angle-up</div>
+                    <div class="fontclass">.icon-angle-up</div>
+                </li>
+            
+        </ul>
+
+        <h2 id="font-class-">font-class引用</h2>
+        <hr>
+
+        <p>font-class是unicode使用方式的一种变种，主要是解决unicode书写不直观，语意不明确的问题。</p>
+        <p>与unicode使用方式相比，具有如下特点：</p>
+        <ul>
+        <li>兼容性良好，支持ie8+，及所有现代浏览器。</li>
+        <li>相比于unicode语意明确，书写更直观。可以很容易分辨这个icon是什么。</li>
+        <li>因为使用class来定义图标，所以当要替换图标时，只需要修改class里面的unicode引用。</li>
+        <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-fontclass-">第一步：引入项目下面生成的fontclass代码：</h3>
+
+
+        <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;link rel="stylesheet" type="text/css" href="./iconfont.css"&gt;</span></code></pre>
+        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+        <pre><code class="lang-css hljs">&lt;<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">iconfont</span> <span class="hljs-selector-tag">icon-xxx</span>"&gt;&lt;/<span class="hljs-selector-tag">i</span>&gt;</code></pre>
+        <blockquote>
+        <p>"iconfont"是你项目下的font-family。可以通过编辑项目查看，默认是"iconfont"。</p>
+        </blockquote>
+    </div>
+</body>
+</html>

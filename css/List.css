@@ -1,0 +1,74 @@
+img { display: block; width: 100%; height: 100%; }
+
+.showcase { position: relative; background-color: #FBFBFB; left: -18px; }
+.showcase .search_head { color: #333; height: 47px; font-size: 14px; padding: 15px 0 12px; background-color: #FBFBFB; border-bottom: solid 1px #e7e7e7; }
+.showcase .search_head ul > li > i.icon-home { color: #37a0db; padding: 0 5px; }
+.showcase .search_main .search_filter img { display: block; width: 100%; height: 100%; }
+.showcase .search_main .search_filter .brand_logo dd { border: 1px solid #ccc; }
+.showcase .search_main .search_filter dl { overflow: hidden; border-bottom: DOTTED 1px #DAD7D7; position: relative; background-color: #F7F5F5; padding: 5px 0; }
+.showcase .search_main .search_filter dl dt, .showcase .search_main .search_filter dl dd { width: 100px; height: 50px; float: left; text-align: center; line-height: 50px; }
+.showcase .search_main .search_filter dl dt { font-size: 16px; border: 1px solid #ccc; }
+.showcase .search_main .search_filter dl dd { margin-left: 10px; }
+.showcase .search_main .search_filter dl dd:hover { z-index: 1; position: relative; border: 1px solid #F6AB00; }
+.showcase .search_main .search_filter dl dd:hover img { display: none; }
+.showcase .search_main .search_list_head { background: #FFF; height: 34px; font-size: 12px; overflow: hidden; color: #666; z-index: 300; margin: 0 auto; width: 1200px; border: 1px solid #e7e7e7; }
+.showcase .search_main .search_list_head dl dt, .showcase .search_main .search_list_head dl dd, .showcase .search_main .search_list_head ul li { height: 100%; float: left; text-align: center; line-height: 32px; }
+.showcase .search_main .search_list_head ul li { margin-right: 20px; }
+.showcase .search_main .search_list_head ul li span { color: #F6AB00; }
+.showcase .search_main .search_list_head ul li a.dis { color: #ccc; cursor: default; }
+.showcase .search_main .search_list_head ul li a { width: 60px; margin-right: 10px; display: inline-block; border: 1px solid #d4d4d4; }
+.showcase .search_main .search_list_head dl dd.select { background: #F6F6F6; color: #37A0DB; }
+.showcase .search_main .search_list_head dl dt { font-size: 16px; }
+.showcase .search_main .search_list_head dl dt, .showcase .search_main .search_list_head dl dd { width: 80px; border-right: 1px solid #e7e3e3; }
+.showcase .search_main .search_list_head dl, .showcase .search_main .search_list_head ul { height: 32px; }
+
+.products_wrap { margin-bottom: 30px; background: #fbfbfb; }
+.products_wrap ul li.hover { z-index: 700; }
+.products_wrap ul li.hover .item_wrap { position: absolute; border: 4px solid #37A0DB; height: 446px; width: 365px; right: -10px; top: -10px; z-index: 99; padding: 10px 10px 0; box-shadow: 4px 4px 20px #c6c6c6; background: #fff; }
+.products_wrap ul li.firstrow { margin-left: 0; }
+.products_wrap ul li.firstrow .item_wrap { left: -10px; }
+.products_wrap ul li.firstrow .item_wrap .item_wrap_left { float: right; border-left: 1px dotted #ddd; border-right: none; }
+.products_wrap ul li.firstrow .item_wrap .item_wrap_right { float: left; }
+.products_wrap ul li { position: relative; float: left; display: inline; height: 387px; width: 224px; margin-left: 20px; margin-bottom: 10px; margin-top: 10px; border: 1px solid #f5f5f5; }
+.products_wrap ul li .item_wrap { height: 380px; width: 222px; }
+.products_wrap ul li .item_wrap .cs_wrapper { position: relative; height: 208px; overflow: hidden; margin-bottom: 14px; margin-top: 14px; }
+.products_wrap ul li .item_wrap .cs_wrapper .cs_list { position: absolute; margin-top: 0; height: auto; padding-left: 0; left: 20px; }
+.products_wrap ul li .item_wrap .cs_wrapper .cs_list li.active img { border: 1px solid #37A0DB; transition: border .2s ease-in 0s; }
+.products_wrap ul li .item_wrap .cs_wrapper .cs_list li { display: block; border: 0; width: 62px; height: 69px; padding: 3px 0; position: relative; margin: 0 auto; }
+.products_wrap ul li .item_wrap .cs_wrapper .cs_list li img { display: block; width: 60px; height: 60px; border: 1px solid #F5F5F5; }
+.products_wrap ul li .item_wrap .item_wrap_left { float: left; width: 100px; margin: 0 auto; padding: 12px 0; height: 310px; display: none; border-right: 1px dashed #ddd; }
+.products_wrap ul li .item_wrap .item_wrap_right { float: right; width: 222px; display: inline; background: #fff; }
+.products_wrap ul li .item_wrap .item_wrap_right .pic { width: 222px; height: 200px; background: #fff; padding: 0 11px; }
+.products_wrap ul li .item_wrap .item_wrap_right .pic a.active { z-index: 1; }
+.products_wrap ul li .item_wrap .item_wrap_right .pic a { z-index: 0; display: block; overflow: hidden; }
+.products_wrap ul li .item_wrap .item_wrap_right .pic a img { display: inline; width: 200px; height: 200px; }
+.products_wrap ul li .item_wrap .item_wrap_right .thumb { width: 202px; height: 33px; margin-left: 10px; }
+.products_wrap ul li .item_wrap .item_wrap_right .thumb .thumb_con { position: relative; height: 33px; overflow: hidden; float: left; width: 165px; padding-top: 3px; }
+.products_wrap ul li .item_wrap .item_wrap_right .thumb .thumb_con .thumb_list { position: absolute; }
+.products_wrap ul li .item_wrap .item_wrap_right .thumb .thumb_con .thumb_list li.active img { border: 1px solid #37A0DB; transition: border .1s ease-in 0s; }
+.products_wrap ul li .item_wrap .item_wrap_right .thumb .thumb_con .thumb_list li { width: 33px; height: 33px; border: 0; margin: 0; float: left; text-align: center; }
+.products_wrap ul li .item_wrap .item_wrap_right .thumb .thumb_con .thumb_list li img { width: 30px; height: 30px; border: 1px solid #E7E3E3; }
+.products_wrap ul li .item_wrap .item_wrap_right .title { width: 222px; padding: 10px 10px 0; overflow: hidden; font-size: 13px; line-height: 18px; height: 33px; color: #f6ab00; text-overflow: ellipsis; white-space: nowrap; }
+.products_wrap ul li .item_wrap .item_wrap_right .name { width: 222px; padding: 0 10px; overflow: hidden; font-size: 12px; line-height: 18px; height: 36px; }
+.products_wrap ul li .item_wrap .item_wrap_right .price { height: 27px; margin-top: 0px; padding-left: 10px; top: 0px; margin: 3px 0 0; color: #F6AB00; position: inherit; }
+.products_wrap ul li .item_wrap .item_wrap_right .price span { font-size: 18px; }
+.products_wrap ul li .item_wrap .item_wrap_right .price del { font-weight: 400; color: #888; font-family: Tahoma; }
+.products_wrap ul li .item_wrap .item_wrap_right .store { height: 20px; margin: 2px 10px auto; }
+.products_wrap ul li .item_wrap .item_wrap_right .list_button { height: 30px; }
+.products_wrap ul li .item_wrap .item_wrap_right .list_button .btn_addcart { background: #F6AB00; color: #fff; text-align: center; height: 30px; font-size: 14px; line-height: 30px; display: block; width: 111px; float: left; padding: 0; margin: 0; }
+.products_wrap ul li .item_wrap .item_wrap_right .list_button .btn_addcart i { padding: 0 4px; }
+.products_wrap ul li .item_wrap .item_wrap_right .list_button .btn_fav { background: #37A0DB; height: 30px; line-height: 30px; color: #fff; text-align: center; font-size: 14px; display: block; width: 111px; float: left; padding: 0; margin: 0; }
+
+.pager { width: 700px; height: 32px; margin: 20px auto; }
+.pager a.currentpage { background: #F6AB00; color: #fff !important; border: 1px solid #ef8f01; }
+.pager a { display: block; padding: 5px 10px; line-height: 20px; text-align: center; float: left; margin-right: 5px; border: 1px solid #e2e0e0; color: #333; }
+.pager .currentpage { background: #F6AB00; color: #fff !important; border: 1px solid #ef8f01; }
+.pager span { display: block; padding: 5px; line-height: 20px; text-align: center; color: #666 !important; float: left; }
+.pager .skip_page { width: 35px; text-align: center; float: left; height: 30px; text-indent: 2px; background-color: #fff; font-size: 12px; border: 1px solid #eee; }
+.pager .btn_page { height: 30px; background: #37a0db; color: #fff; border: 0; }
+
+.hot { margin-top: 30px; }
+.hot .products_wrap { border: 0; margin-bottom: 0; }
+.hot .products_wrap .hot_head { background: #37a0db; padding-left: 20px; height: 40px; line-height: 40px; color: #fff; font-size: 16px; }
+
+/*# sourceMappingURL=List.css.map */

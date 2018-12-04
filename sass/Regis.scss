@@ -1,0 +1,145 @@
+.wrap {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100px;
+    border-bottom: 2px solid #fe3f71;
+    .logo_con {
+        .logo {
+            width: 200px;
+            height: 60px;
+            float: left;
+            margin-top: 24px;
+            background: url(../img/Register/logo.gif) no-repeat;
+        }
+        .logo-title {
+            float: left;
+            position: relative;
+            top: 50px;
+            right: 10px;
+        }
+    }
+}
+
+.main {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    .main_title {
+        width: 300px;
+        padding-left: 50px;
+        margin: 0 auto;
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        span {
+            margin-left: 5px;
+            text-align: center;
+        }
+        .welcome {
+            color: #4d4d4d;
+            font-size: 24px;
+        }
+        .split {
+            height: 20px;
+            line-height: 20px;
+            padding-top: 10px;
+        }
+        .tologin {
+            width: 120px;
+            height: 20px;
+            line-height: 20px;
+            padding-top: 10px;
+            color: #4d4d4d;
+        }
+    }
+    .reg_box {
+        overflow: hidden;
+        padding: 20px 0;
+        font-size: 16px;
+        .reg_form {
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 20px;
+            #immediately {
+                .submit_button {
+                    border: 0;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 20px;
+                    text-align: center;
+                    background: #fe3f71;
+                    border-radius: 5px;
+                }
+            }
+            .line-protocol {
+                font-size: 12px;
+                margin-top: 40px;
+                .warn_word{
+                    display: block;
+                    width: 300px;
+                    height: 20px;
+                }
+            }
+            .line-protocol,
+            #immediately {
+                padding-left: 130px;
+            }
+            .reg-line {
+                position: relative;
+                margin-bottom: 20px;
+                label {
+                    float: left;
+                    width: 130px;
+                    padding-top: 10px;
+                    text-align: right;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #4d4d4d;
+                    line-height: 24px;
+                }
+                #code {
+                    width: 150px;
+                }
+                .code {
+                    width: 145px;
+                    height: 40px;
+                    font-size: 28px;
+                    line-height: 40px;
+                    text-align: center;
+                    background: lightblue;
+                    vertical-align: middle;
+                    display: inline-block;
+                    border: 1px solid #999;
+                }
+                input[type="text"],
+                input[type="password"],
+                input[type="button"] {
+                    color: #444;
+                    height: 40px;
+                    width: 300px;
+                    font-size: 14px;
+                    line-height: 40px;
+                    text-indent: 10px;
+                    background-color: #fff;
+                    background-image: none;
+                    border: 1px solid #999;
+                    &:focus {
+                        box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0 8px rgba(82, 168, 236, .6);
+                        outline: 0;
+                    }
+                }
+                .tip {
+                    border: 0px;
+                    position: absolute;
+                    top: 8px;
+                    right: 33px;
+                    display: none;
+                }
+            }
+        }
+    }
+}
